@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColour"
+    tools:context=".MainActivity"
+    android:id="@+id/drawer_layout"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".WorkoutsFragment">
+        <!-- header textview that stays consistent with the rest of the application -->
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/header"
+            android:fontFamily="@font/bahnschrift"
+            android:gravity="center"
+            android:text="WORKOUTS"
+            android:textColor="@color/textColour"
+            android:textSize="35sp"
+            />
+        <!-- background of the components -->
+        <RelativeLayout
+            android:id="@+id/workoutLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="150dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/workoutBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/backgroundColour2"
+                android:padding="10dp">
+
+                <ImageButton
+                    android:id="@+id/imageButtonI"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+
+
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="-5dp"
+                    android:layout_marginRight="-5dp"
+                    android:layout_marginTop="-5dp"
+                    android:background="@drawable/ic_i_button_foreground"
+                    tools:ignore="RtlHardcoded,VectorDrawableCompat" />
+
+                <TextView
+                    android:id="@+id/movementTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/textColour"
+                    android:textSize="30sp"
+                    android:fontFamily="@font/bahnschrift"
+                    android:text="MOVEMENT: "/>
+
+                <TextView
+                    android:id="@+id/repsTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/textColour"
+                    android:textSize="30sp"
+                    android:fontFamily="@font/bahnschrift"
+                    android:text="REPS: "
+                    android:layout_below="@+id/movementTextView"/>
+                <TextView
+                    android:id="@+id/setsTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/textColour"
+                    android:textSize="30sp"
+                    android:fontFamily="@font/bahnschrift"
+                    android:text="SETS: "
+                    android:layout_below="@+id/repsTextView"/>
+
+
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/startWorkout"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/workoutBackground"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@color/foregroundColour"
+                android:text="START MOVEMENT"
+                android:textColor="@color/textColour"
+                android:layout_centerHorizontal="true"
+                android:hapticFeedbackEnabled="true"
+                 />
+
+
+            <RelativeLayout
+                android:id="@+id/workoutBackground2"
+                android:layout_width="188dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/startWorkout"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/backgroundColour2"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/repsDone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="REPS: 0/XX"
+                    android:textColor="@color/textColour"
+                    android:textSize="30dp"
+                    android:layout_centerHorizontal="true"
+
+
+                    />
+
+                <TextView
+                    android:id="@+id/setsDone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/repsDone"
+                    android:text="SETS: 0/XX"
+                    android:textColor="@color/textColour"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="30sp" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/timeLeft"
+                android:layout_width="208dp"
+                android:layout_height="103dp"
+                android:layout_below="@id/startWorkout"
+android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@id/workoutBackground2"
+                android:background="@color/backgroundColour2"
+                android:gravity="center"
+                android:text="REST\n00:00"
+                android:textColor="@color/textColour"
+                android:textSize="30sp"
+                android:layout_toEndOf="@id/workoutBackground2" />
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:itemTextColor="@color/textColour"
+        android:background="@color/backgroundColour"
+        app:menu="@menu/draw_menu"
+        android:id="@+id/nav_view"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header">
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>
+

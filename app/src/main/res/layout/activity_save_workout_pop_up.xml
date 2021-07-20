@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/popup"
+    tools:context=".PopupActivity"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/popupTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WOROKUT FINISHED!\n\nENTER THE WEIGHT USED AND RATE YOUR WORKOUT"
+        android:textColor="@color/textColour"
+        android:fontFamily="@font/bahnschrift"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:padding="10dp"
+        />
+    <TextView
+        android:id="@+id/textViewMovement1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="MOVEMENT 1: "
+        android:layout_below="@id/popupTitle"
+        android:textColor="@color/textColour"/>
+    <EditText
+        android:id="@+id/editTextMovement1"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_below="@+id/textViewMovement1"
+        android:textColor="@color/textColour"
+        android:inputType="number"
+
+        />
+    <TextView
+        android:id="@+id/textViewMovement1KG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:text="KG"
+        android:layout_toRightOf="@id/editTextMovement1"
+        android:layout_below="@id/textViewMovement1"
+        android:textColor="@color/textColour"/>
+
+    <TextView
+        android:id="@+id/textViewMovement2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="MOVEMENT 2: "
+        android:layout_below="@id/editTextMovement1"
+        android:textColor="@color/textColour"/>
+    <EditText
+        android:id="@+id/editTextMovement2"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_below="@+id/textViewMovement2"
+        android:textColor="@color/textColour"
+        android:inputType="number"
+
+        />
+    <TextView
+        android:id="@+id/textViewMovement2KG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:text="KG"
+        android:layout_toRightOf="@id/editTextMovement2"
+        android:layout_below="@id/textViewMovement2"
+        android:textColor="@color/textColour"/>
+
+    <TextView
+        android:id="@+id/textViewMovement3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="MOVEMENT 3: "
+        android:layout_below="@id/editTextMovement2"
+        android:textColor="@color/textColour"/>
+    <EditText
+        android:id="@+id/editTextMovement3"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_below="@+id/textViewMovement3"
+        android:textColor="@color/textColour"
+        android:inputType="number"
+
+        />
+    <TextView
+        android:id="@+id/textViewMovement3KG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:text="KG"
+        android:layout_toRightOf="@id/editTextMovement3"
+        android:layout_below="@id/textViewMovement3"
+        android:textColor="@color/textColour"/>
+
+    <RatingBar
+        android:id="@+id/woroutRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/foregroundColour"
+        android:layout_gravity="center"
+        android:numStars="5"
+        android:stepSize="1"
+        android:layout_below="@+id/editTextMovement3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+    <Button
+        android:id="@+id/saveWorkoutYes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/bahnschrift"
+        android:text="SAVE WORKOUT"
+        android:textColor="@color/textColour"
+        android:textSize="30sp"
+        android:background="@color/foregroundColour"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hapticFeedbackEnabled="true"
+        android:layout_below="@+id/woroutRatingBar"/>
+
+
+</RelativeLayout>

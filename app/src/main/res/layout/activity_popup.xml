@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/popup"
+    tools:context=".PopupActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/warningMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WARNING MESSAGE"
+        android:textColor="@color/textColour"
+        android:fontFamily="@font/bahnschrift"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:padding="10dp"/>
+    <Button
+        android:id="@+id/buttonPopupClose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/bahnschrift"
+        android:text="CLOSE"
+        android:textColor="@color/textColour"
+        android:textSize="30sp"
+        android:background="@color/foregroundColour"
+        android:layout_marginRight="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:hapticFeedbackEnabled="true"/>
+</LinearLayout>

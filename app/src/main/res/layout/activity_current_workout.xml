@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColour"
+    tools:context=".MainActivity"
+    android:id="@+id/drawer_layout"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WorkoutsFragment">
+    <!-- header textview that stays consistent with the rest of the application -->
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/header"
+        android:fontFamily="@font/bahnschrift"
+        android:gravity="center"
+        android:text="WORKOUTS"
+        android:textColor="@color/textColour"
+        android:textSize="35sp"
+        />
+    <!-- background of the components -->
+    <LinearLayout
+        android:id="@+id/workoutBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:id="@+id/workoutText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/backgroundColour2"
+            android:text=""
+            android:textColor="@color/textColour"
+            android:textSize="30sp"
+            android:fontFamily="@font/bahnschrift"
+            android:gravity="center|top"
+            android:padding="10dp"/>
+
+
+
+        <Button
+            android:id="@+id/startWorkoutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@color/foregroundColour"
+            android:clickable="true"
+            android:hapticFeedbackEnabled="true"
+            android:text="START WORKOUT"
+            android:textColor="@color/textColour"
+            android:focusable="true" />
+
+        <Button
+            android:id="@+id/goBackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@color/foregroundColour"
+            android:clickable="true"
+            android:hapticFeedbackEnabled="true"
+            android:text="GO BACK"
+            android:textColor="@color/textColour"
+            android:focusable="true" />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+<com.google.android.material.navigation.NavigationView
+android:layout_width="wrap_content"
+android:layout_height="match_parent"
+app:itemTextColor="@color/textColour"
+android:background="@color/backgroundColour"
+app:menu="@menu/draw_menu"
+android:id="@+id/nav_view"
+android:layout_gravity="start"
+app:headerLayout="@layout/nav_header">
+</com.google.android.material.navigation.NavigationView>
+    </androidx.drawerlayout.widget.DrawerLayout>
+

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!-- Relative layout to hold each components -->
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundColour"
+        tools:context=".HomeFragment"
+        android:id="@+id/homePage">
+        <!-- header textview that stays consistent with the rest of the application -->
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/header"
+            android:text="HOME"
+            android:gravity="center"
+            android:fontFamily="@font/bahnschrift"
+            android:textColor="@color/textColour"
+            android:textSize="35sp"/>
+    <!-- welcoming back the user to the application -->
+    <TextView
+        android:id="@+id/currentDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/bahnschrift"
+        android:background="@color/backgroundColour2"
+        android:gravity="top|center_horizontal"
+        android:padding="10dp"
+        android:text="[DATE GOES HERE] "
+        android:textColor="@color/textColour"
+        android:textSize="20sp" />
+        <!-- providing the user with their last workout -->
+        <TextView
+            android:id="@+id/previousWorkout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/currentDate"
+            android:layout_marginTop="54dp"
+            android:background="@color/backgroundColour2"
+            android:fontFamily="@font/bahnschrift"
+            android:gravity="top|center_horizontal"
+            android:padding="10dp"
+            android:text="WELCOME BACK\n\n TODD SANDLER"
+            android:textColor="@color/textColour"
+            android:textSize="20sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+    </RelativeLayout>
+
+
+
+
+

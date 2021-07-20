@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.co3201weighttrainingapplication">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:fullBackupContent="@xml/backup_descriptor"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CO3201WeightTrainingApplication">
+        <activity
+            android:name=".helpButtonActivity"
+            android:label="WORKOUT INFORMATION"
+            android:theme="@style/PopupHelp" />
+
+        <activity
+            android:name=".SaveWorkoutPopUpActivity"
+            android:label="RATE THIS WORKOUT"
+            android:theme="@style/PopupMe" />
+        <activity
+            android:name=".ExerciseStartActivity"
+            android:label="" />
+        <activity
+            android:name=".PopupActivity"
+            android:label="INVALID CHOICES"
+            android:theme="@style/PopupMe" />
+        <activity
+            android:name=".DateClickedActivity"
+            android:label="" />
+        <activity
+            android:name=".CurrentWorkoutActivity"
+            android:label="" />
+        <activity
+            android:name=".MainActivity"
+            android:label="">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

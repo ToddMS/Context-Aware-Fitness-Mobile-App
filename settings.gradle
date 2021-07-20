@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "CO3201 Weight Training Application"

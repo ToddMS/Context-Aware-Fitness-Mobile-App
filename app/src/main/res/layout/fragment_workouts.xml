@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColour"
+    tools:context=".WorkoutsFragment">
+    <!-- header textview that stays consistent with the rest of the application -->
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/header"
+        android:fontFamily="@font/bahnschrift"
+        android:gravity="center"
+        android:text="WORKOUTS"
+        android:textColor="@color/textColour"
+        android:textSize="35sp" />
+    <!-- background of the components -->
+    <TextView
+        android:id="@+id/workoutBackground"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/header"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/backgroundColour2"
+        android:fontFamily="@font/bahnschrift"
+        android:gravity="top"
+        android:textSize="20sp" />
+    <!-- Intensity Text View -->
+    <TextView
+        android:id="@+id/intensity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignStart="@+id/workoutBackground"
+        android:layout_marginStart="10dp"
+        android:layout_alignLeft="@+id/workoutBackground"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@+id/workoutBackground"
+        android:layout_marginTop="10dp"
+
+        android:fontFamily="@font/bahnschrift"
+        android:text="Intensity"
+        android:textColor="@color/textColour"
+        android:textSize="20sp"
+         />
+    <!-- Slide bar to get the level of intensity -->
+    <SeekBar
+        android:id="@+id/intensitySlider"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/workoutBackground"
+        android:layout_alignLeft="@+id/workoutBackground"
+        android:layout_alignTop="@+id/workoutBackground"
+        android:layout_marginStart="90dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="15dp"
+
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:max="10" />
+    <!-- The number that changes when the slider is moved-->
+    <TextView
+        android:id="@+id/intensityNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignTop="@+id/workoutBackground"
+        android:layout_marginTop="10dp"
+
+        android:layout_marginStart="-10dp"
+        android:layout_marginLeft="-10dp"
+
+        android:fontFamily="@font/bahnschrift"
+        android:gravity="start"
+
+        android:text="0"
+        android:textColor="@color/textColour"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/intensitySlider"
+        android:layout_toEndOf="@+id/intensitySlider" />
+    <!-- Equipment that the user has access to -->
+    <TextView
+        android:id="@+id/equipment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/workoutBackground"
+        android:layout_alignLeft="@+id/workoutBackground"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@+id/intensity"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/bahnschrift"
+        android:gravity="top"
+
+        android:text="EQUIPMENT:"
+        android:textColor="@color/textColour"
+        android:textSize="20sp" />
+    <Switch
+        android:id="@+id/weightAccess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/equipment"
+        android:layout_alignStart="@+id/workoutBackground"
+        android:layout_alignLeft="@+id/workoutBackground"
+        android:layout_alignTop="@id/equipment"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/bahnschrift"
+        android:gravity="top"
+        android:text="Weight Access"
+        android:textColor="@color/textColour"
+        android:textSize="20sp"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+    <!-- Switch for the user to choose their equipment -->
+    <!-- Switches for the user to press if they have any injuries -->
+    <TextView
+        android:id="@+id/injuries"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/weightAccess"
+        android:layout_alignLeft="@id/workoutBackground"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/bahnschrift"
+        android:gravity="top"
+
+        android:text="INJURIES:"
+        android:textColor="@color/textColour"
+        android:textSize="20sp"
+        android:layout_alignStart="@id/workoutBackground" />
+    <!-- Switch for the user to choose if they're injured -->
+    <Switch
+        android:id="@+id/upperBodyInjured"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/injuries"
+        android:layout_alignStart="@+id/workoutBackground"
+        android:layout_alignLeft="@+id/workoutBackground"
+        android:layout_alignTop="@id/injuries"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/bahnschrift"
+
+        android:text="Upper Body"
+        android:textColor="@color/textColour"
+        android:textSize="20sp"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+    <!-- Switch for the user to choose if they're injured -->
+    <Switch
+        android:id="@+id/lowerBodyInjured"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/injuries"
+        android:layout_alignStart="@+id/workoutBackground"
+        android:layout_alignLeft="@+id/workoutBackground"
+        android:layout_alignTop="@id/upperBodyInjured"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/bahnschrift"
+        android:gravity="top"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+
+        android:text="Lower Body"
+        android:textColor="@color/textColour"
+        android:textSize="20sp"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+    <!-- Switches for the users workout length choice-->
+    <TextView
+        android:id="@+id/workoutLength"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/lowerBodyInjured"
+        android:layout_alignLeft="@id/workoutBackground"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/bahnschrift"
+        android:gravity="top"
+
+        android:text="LENGTH:"
+        android:textColor="@color/textColour"
+        android:textSize="20sp"
+        android:layout_alignStart="@id/workoutBackground" />
+    <!-- Switch for the user to choose their workout of 30 mintues -->
+    <Switch
+        android:id="@+id/thirtyMinutes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/workoutLength"
+        android:layout_alignStart="@+id/workoutBackground"
+        android:layout_alignLeft="@+id/workoutBackground"
+        android:layout_alignTop="@id/workoutLength"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/bahnschrift"
+        android:gravity="top"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+
+        android:text="30 MINUTES"
+        android:textColor="@color/textColour"
+        android:textSize="20sp"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+    <!-- Switch for the user to choose their workout of 60 mintues -->
+    <Switch
+        android:id="@+id/sixtyMinutes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/workoutLength"
+        android:layout_alignStart="@+id/workoutBackground"
+        android:layout_alignLeft="@+id/workoutBackground"
+        android:layout_alignTop="@id/thirtyMinutes"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/bahnschrift"
+        android:gravity="top"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+
+        android:text="60 MINUTES"
+        android:textColor="@color/textColour"
+        android:textSize="20sp"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+    <!-- Button to find the workouts that meet the chosen switches -->
+    <Button
+        android:id="@+id/findWorkouts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/workoutBackground"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:checkable="false"
+        android:hapticFeedbackEnabled="true"
+        android:text="FIND WORKOUT"
+        android:textColor="@color/textColour" />
+
+</RelativeLayout>
+

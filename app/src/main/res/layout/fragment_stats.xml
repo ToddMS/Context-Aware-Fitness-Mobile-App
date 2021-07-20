@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Relative layout to hold each components -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColour"
+    tools:context=".HomeFragment"
+    android:id="@+id/homePage">
+    <!-- header textview that stays consistent with the rest of the application -->
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/header"
+        android:text="@string/statistics"
+        android:gravity="center"
+        android:fontFamily="@font/bahnschrift"
+        android:textColor="@color/textColour"
+        android:textSize="35sp"/>
+
+
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barChart"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight  ="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/textColour"
+        android:layout_marginBottom="200dp"
+        android:layout_below="@+id/barCharTitleDropDown"
+        android:background="@color/backgroundColour2">
+
+
+    </com.github.mikephil.charting.charts.BarChart>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/barchartMonths"
+        android:textColor="@color/textColour"
+        android:fontFamily="@font/bahnschrift"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight  ="10dp"
+        android:layout_below="@+id/barChart"
+        android:layout_marginTop="-200dp"
+        android:background="@color/backgroundColour2"
+        android:gravity="center"
+        android:text="J    F    M    A    M    J    J    A    S    O   N    D"
+        />
+
+
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pieChart"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/textColour"
+        android:layout_marginBottom="200dp"
+        android:layout_below="@+id/barCharTitleDropDown"
+        android:background="@color/backgroundColour2"/>
+
+    <RelativeLayout
+        android:id="@+id/bmiCalc"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/barCharTitleDropDown"
+        android:background="@color/backgroundColour2"
+
+        >
+
+        <TextView
+            android:id="@+id/bmiHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bmiCalc"
+            android:text="HEIGHT(CM)"
+            android:textColor="@color/textColour"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            tools:ignore="NotSibling" />
+
+        <EditText
+            android:id="@+id/bmiHeightEditText"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/bmiHeight"
+            android:textSize="10sp"
+            android:inputType="number"
+            android:text=""
+            android:textColor="@color/textColour2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/bmiWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bmiHeightEditText"
+            android:text="WEIGHT (KG)"
+            android:textColor="@color/textColour"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/bmiWeightEditText"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/bmiWeight"
+            android:textSize="10sp"
+            android:inputType="number"
+            android:text=""
+            android:textColor="@color/textColour2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <Button
+            android:id="@+id/btnBmiCalculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bmiScore"
+            android:layout_toRightOf="@id/bmiHeightEditText"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/textColour"
+            android:text="CALCULATE"
+
+            />
+
+        <TextView
+            android:id="@+id/bmiScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColour"
+            android:text="BMI SCORE:\n00.00"
+            android:layout_toRightOf="@id/bmiHeightEditText"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:fontFamily="@font/bahnschrift"
+            android:textSize="40px"
+            android:gravity="center_horizontal"
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+    <Spinner
+        android:id="@+id/barCharTitleDropDown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_margin="10dp"
+        android:entries="@array/StatsTitle"
+
+        />
+
+
+</RelativeLayout>
+
+
+
+
+
+
+

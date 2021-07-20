@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Relaive layout to hold all components of the application-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColour"
+    tools:context=".LogsFragment"
+    android:orientation="vertical">
+    <!-- header textview that stays consistent with the rest of the application -->
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header"
+        android:fontFamily="@font/bahnschrift"
+        android:gravity="center"
+        android:text="LOGS"
+        android:textColor="@color/textColour"
+        android:textSize="35sp"/>
+    <!-- background for the calender to sit infront of -->
+    <TextView
+        android:id="@+id/calendarBackground"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:layout_below="@+id/header"
+        android:background="@color/backgroundColour2"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"/>
+    <!-- background of each week/date -->
+    <TextView
+        android:id="@+id/calendarNumberBackground"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/header"
+        android:background="@color/textColour2"
+        android:layout_marginTop="105dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"/>
+    <!-- background of each week/date -->
+    <TextView
+        android:id="@+id/calendarNumberBackground1"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/calendarNumberBackground"
+        android:background="@color/textColour2"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"/>
+    <!-- background of each week/date -->
+    <TextView
+        android:id="@+id/calendarNumberBackground2"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/calendarNumberBackground1"
+        android:background="@color/textColour2"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"/>
+    <!-- background of each week/date -->
+    <TextView
+        android:id="@+id/calendarNumberBackground3"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/calendarNumberBackground2"
+        android:background="@color/textColour2"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"/>
+    <!-- background of each week/date -->
+    <TextView
+        android:id="@+id/calendarNumberBackground4"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/calendarNumberBackground3"
+        android:background="@color/textColour2"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"/>
+    <!-- background of each week/date -->
+    <TextView
+        android:id="@+id/calendarNumberBackground5"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/calendarNumberBackground4"
+        android:background="@color/textColour2"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"/>
+    <!-- The calendar widget that the user interacts with -->
+    <CalendarView
+        android:id="@+id/logCalendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:theme="@style/CalenderViewCustom"
+        android:weekDayTextAppearance="@style/CalenderViewWeekCustomText"
+        android:hapticFeedbackEnabled="true"
+        />
+</RelativeLayout>
+

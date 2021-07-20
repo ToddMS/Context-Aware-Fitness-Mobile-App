@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Relative layout to hold each components -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColour"
+    android:id="@+id/faqPage">
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/header"
+        android:text="FAQ"
+        android:gravity="center"
+        android:fontFamily="@font/bahnschrift"
+        android:textColor="@color/textColour"
+        android:textSize="35sp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/header">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/FAQ1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bahnschrift"
+                android:background="@color/backgroundColour2"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="WHAT SHOULD I DO IF MY UPPER AND LOWER BODY ARE INJURED?"
+                android:textColor="@color/textColour"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/FAQ1Answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bahnschrift"
+                android:background="@color/backgroundColour2"
+                android:padding="10dp"
+                android:text="STRETCH/LIGHTLY USE THE INJURED MUSCLES THROUGHOUT THE DAY, AND GET PLETNY OF REST"
+                android:textColor="@color/textColour"
+                android:textSize="20sp"
+                android:layout_below="@+id/FAQ1"
+                />
+
+            <TextView
+                android:id="@+id/FAQ2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bahnschrift"
+                android:background="@color/backgroundColour2"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="WHAT WEIGHT SHOULD I START WITH AS A BEGINNER"
+                android:textColor="@color/textColour"
+                android:textSize="20sp"
+                android:layout_below="@id/FAQ1Answer"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:id="@+id/FAQ2Answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bahnschrift"
+                android:background="@color/backgroundColour2"
+                android:padding="10dp"
+                android:text="START LOW AND WORK YOUR WAY UP, FOR EXAMPLE 20KG - 40KG"
+                android:textColor="@color/textColour"
+                android:textSize="20sp"
+                android:layout_below="@+id/FAQ2"
+                />
+            <TextView
+                android:id="@+id/FAQ3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bahnschrift"
+                android:background="@color/backgroundColour2"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="HOW MUCH SHOULD I ADD TO MY MOVEMENTS PER WORKOUT"
+                android:textColor="@color/textColour"
+                android:textSize="20sp"
+                android:layout_below="@id/FAQ2Answer"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:id="@+id/FAQ3Answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bahnschrift"
+                android:background="@color/backgroundColour2"
+                android:padding="10dp"
+                android:text="IF YOU SUCCESSFULY COMPLETE A WORKOUT, INCREMENT 2.5KG ONTO THE MOVEMENTS EACH WORKOUT"
+                android:textColor="@color/textColour"
+                android:textSize="20sp"
+                android:layout_below="@+id/FAQ3"
+                />
+            <TextView
+                android:id="@+id/FAQ4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bahnschrift"
+                android:background="@color/backgroundColour2"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="WHAT SHOULD I DO IF I FAIL A MOVEMENTS EXPECTED REPITIONS"
+                android:textColor="@color/textColour"
+                android:textSize="20sp"
+                android:layout_below="@id/FAQ3Answer"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:id="@+id/FAQ4Answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bahnschrift"
+                android:background="@color/backgroundColour2"
+                android:padding="10dp"
+                android:text="IF YOU FAIL, REDUCE THE WEIGHT BY 2.5KG FOR THE NEXT WORKOUT"
+                android:textColor="@color/textColour"
+                android:textSize="20sp"
+                android:layout_below="@+id/FAQ4"
+                />
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
+
+
+
+
+

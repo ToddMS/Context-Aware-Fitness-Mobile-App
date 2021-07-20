@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Drawer layout allows us to include the navigation menu for the user to access-->
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColour"
+    tools:context=".MainActivity"
+    android:id="@+id/drawer_layout">
+    <!-- Relative layout inside the drawer layout, allowing us to put the apps components in-->
+    <RelativeLayout
+        android:id="@+id/homePage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundColour"
+        tools:context=".MainActivity">
+        <!-- frame layout to swap between the 3 main frames of the program, allowing us to stay on
+        one activity -->
+        <FrameLayout
+            android:id="@+id/flFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.example.co3201weighttrainingapplication.HomeFragment"/>
+    </RelativeLayout>
+    <!-- the navigation drawer that comes out from the side to allow to swap between fragments -->
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:itemTextColor="@color/textColour"
+        android:background="@color/backgroundColour"
+        app:menu="@menu/draw_menu"
+        android:id="@+id/nav_view"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header">
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>
+

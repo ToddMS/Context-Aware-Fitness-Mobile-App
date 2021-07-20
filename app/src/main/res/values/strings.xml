@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">CO3201 Weight Training Application</string>
+    <string name="home">HOME</string>
+    <string name="logs">LOGS</string>
+    <string name="workouts">WORKOUTS</string>
+    <string name="statistics">STATISTICS</string>
+    <string name="faq">FAQ</string>
+
+    <string name="openNavDrawer">Navigation Drawer Open</string>
+    <string name="closeNavDrawer">Navigation Drawer Close</string>
+
+    <string name="material_calendar_monday">Mon</string>
+    <string name="material_calendar_tuesday">Tue</string>
+    <string name="material_calendar_wednesday">Wed</string>
+    <string name="material_calendar_thursday">Thur</string>
+    <string name="material_calendar_friday">Fri</string>
+    <string name="material_calendar_saturday">Sat</string>
+    <string name="material_calendar_sunday">Sun</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_calendar">activity_calendar</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+
+    <string-array name="StatsTitle">
+        <item>WORKOUTS PER MONTH</item>
+        <item>MUSCLE GROUPS</item>
+        <item>BMI CALCULATOR</item>
+    </string-array>
+
+</resources>
