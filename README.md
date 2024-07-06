@@ -1,13 +1,34 @@
-Designing a Personal Context-aware Weight Training Assistant
 
-## Information about this repository
+### Context-Aware Fitness Mobile App
 
-This is the repository that you are going to use **individually** for developing your project. Please use the resources provided in the module to learn about **plagiarism** and how plagiarism awareness can foster your learning.
+## Overview
+The Context-Aware Fitness Mobile App is a personalized workout assistant designed to provide real-time feedback during workouts. The app leverages mobile phone sensor data to offer context-aware recommendations and guidance. It is built using Java and Android Studio.
 
-Regarding the use of this repository, once a feature (or part of it) is developed and **working** or parts of your system are integrated and **working**, define a commit and push it to the remote repository. You may find yourself making a commit after a productive hour of work (or even after 20 minutes!), for example. Choose commit message wisely and be concise.
+## Features
+- **Real-Time Feedback**: Provides immediate feedback during workouts using sensor data.
+- **Personalized Workouts**: Tailors workouts based on user preferences and performance.
+- **Sensor Integration**: Utilizes mobile phone sensors to track movements and activity.
+- **User Interface**: Intuitive and user-friendly interface designed for ease of use.
 
-Please choose the structure of the contents of this repository that suits the needs of your project but do indicate in this file where the main software artefacts are located.
+## Technologies Used
+- **Programming Language**: Java
+- **Development Environment**: Android Studio
+- **Sensors**: Accelerometer, Gyroscope, GPS
 
-## How to run the application
+## Installation
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/context-aware-fitness-app.git
 
-This app was developed on Android Studio, so you will need to install it to run this app. Emulated on a Google Pixel 3 and installed onto a Huawei p20
+2. **Open in Android Studio**
+  Open Android Studio and select "Open an existing Android Studio project".
+  Navigate to the cloned repository and open it.
+
+3. **Build and Run the App**
+  Connect an Android device or use an emulator.
+  Click "Run" in Android Studio.
+
+## Usage
+1. Start a Workout: Select a workout settings and start the session.
+2. Receive Feedback: Follow the real-time feedback and adjust your workout accordingly.
+3. Track Progress: View your workout history and track your progress over time.
